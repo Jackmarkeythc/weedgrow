@@ -1,24 +1,24 @@
-document.getElementById('signUpLink').addEventListener('click', function() {
+document.getElementById('signUpLink')?.addEventListener('click', function() {
     document.getElementById('loginForm').style.display = 'none';
     document.getElementById('signUpContainer').style.display = 'block';
 });
 
-document.getElementById('loginLink').addEventListener('click', function() {
+document.getElementById('loginLink')?.addEventListener('click', function() {
     document.getElementById('signUpContainer').style.display = 'none';
     document.getElementById('loginForm').style.display = 'block';
 });
 
-document.getElementById('forgotPasswordLink').addEventListener('click', function() {
+document.getElementById('forgotPasswordLink')?.addEventListener('click', function() {
     document.getElementById('loginForm').style.display = 'none';
     document.getElementById('forgotPasswordContainer').style.display = 'block';
 });
 
-document.getElementById('backToLoginLink').addEventListener('click', function() {
+document.getElementById('backToLoginLink')?.addEventListener('click', function() {
     document.getElementById('forgotPasswordContainer').style.display = 'none';
     document.getElementById('loginForm').style.display = 'block';
 });
 
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm')?.addEventListener('submit', function(event) {
     event.preventDefault();
     
     const email = document.getElementById('email').value;
@@ -33,13 +33,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 });
 
-document.getElementById('signUpForm').addEventListener('submit', function(event) {
+document.getElementById('signUpForm')?.addEventListener('submit', function(event) {
     event.preventDefault();
     // Handle sign-up form submission
     alert('Sign-up form submitted');
 });
 
-document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+document.getElementById('forgotPasswordForm')?.addEventListener('submit', function(event) {
     event.preventDefault();
     // Handle forgot password form submission
     alert('Forgot password form submitted');
