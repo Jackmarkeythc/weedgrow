@@ -4,6 +4,10 @@ body {
     background-color: #f6f7f8;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* Container styles */
@@ -87,11 +91,15 @@ a:hover {
 .main-content {
     display: flex;
     padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
 }
 
 /* Sidebar styles */
 .sidebar {
-    width: 200px;
+    width: 250px;
     background-color: white;
     padding: 20px;
     margin-right: 20px;
